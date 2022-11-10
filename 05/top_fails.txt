@@ -1,0 +1,10 @@
+9016K	../s21_school/D01_Linux-0/.git/objects/pack/pack-0df86016d1ec0c58a3e50444046e7c729a6f0c9b.pack
+1420K	../s21_school/D01_Linux-0/misc/images/linux.png
+372K	../s21_school/D01_Linux-0/data-samples/screen_2_2.png
+320K	../s21_school/D01_Linux-0/misc/images/htop1.png
+300K	../s21_school/D01_Linux-0/misc/images/htop3.png
+292K	../s21_school/D01_Linux-0/data-samples/screen_1.png
+192K	../s21_school/D01_Linux-0/misc/images/log1.png
+188K	../s21_school/D01_Linux-0/misc/images/top3.png
+188K	../s21_school/D01_Linux-0/data-samples/screen_2_3.png
+188K	../s21_school/D01_Linux-0/data-samples/screen_2_1.png
