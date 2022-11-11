@@ -11,7 +11,7 @@ name=$(date '+%d_%m_%y_%H_%M_%S')
 
 if [[ 'y' = $ask ]] || [[ 'Y' = $ask ]]
 then
-    . script.sh > data/$name.status
+    . script.sh > ../data/$name.status
 else
     echo "Выход"
 fi

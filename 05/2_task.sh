@@ -12,7 +12,7 @@ do
     printf '%s' $(echo -n $str_num | awk '{print $2}')
     num=$(cat top_dir.txt | awk 'NR == '$i''| awk '{print $1}')
 
-    if [[ num -lt 1024 ]]
+    if [[ num -lt 1000 ]]
         then
         echo  ' '$num MB
     else

@@ -28,10 +28,10 @@ if [[ $err -ne 1 ]]
     chmod +x ../03/col_txt_1.sh
     chmod +x ../03/col_txt_2.sh
 
-    val_1=$(cat param.txt | awk 'NR == 1'| awk -F"=" '{print $NF}')
-    val_2=$(cat param.txt | awk 'NR == 2'| awk -F"=" '{print $NF}')
-    val_3=$(cat param.txt | awk 'NR == 3'| awk -F"=" '{print $NF}')
-    val_4=$(cat param.txt | awk 'NR == 4'| awk -F"=" '{print $NF}')
+    val_1=$(cat ../data/param.txt | awk 'NR == 1'| awk -F"=" '{print $NF}')
+    val_2=$(cat ../data/param.txt | awk 'NR == 2'| awk -F"=" '{print $NF}')
+    val_3=$(cat ../data/param.txt | awk 'NR == 3'| awk -F"=" '{print $NF}')
+    val_4=$(cat ../data/param.txt | awk 'NR == 4'| awk -F"=" '{print $NF}')
     
     : ${val_1:=6}
     : ${val_2:=1} 

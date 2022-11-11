@@ -4,20 +4,20 @@ source "../03/color.sh"
 
 re=^[1-6]?$
 
-val_1=$(cat param.txt | awk 'NR == 1'| awk -F"=" '{print $NF}')
-val_2=$(cat param.txt | awk 'NR == 2'| awk -F"=" '{print $NF}')
-val_3=$(cat param.txt | awk 'NR == 3'| awk -F"=" '{print $NF}')
-val_4=$(cat param.txt | awk 'NR == 4'| awk -F"=" '{print $NF}')
+val_1=$(cat ../data/param.txt | awk 'NR == 1'| awk -F"=" '{print $NF}')
+val_2=$(cat ../data/param.txt | awk 'NR == 2'| awk -F"=" '{print $NF}')
+val_3=$(cat ../data/param.txt | awk 'NR == 3'| awk -F"=" '{print $NF}')
+val_4=$(cat ../data/param.txt | awk 'NR == 4'| awk -F"=" '{print $NF}')
 
 : ${val_1:=6}
 : ${val_2:=1} 
 : ${val_3:=2} 
 : ${val_4:=4} 
 
-len_1="$(sed -n 1p param.txt)"
-len_2="$(sed -n 2p param.txt)"
-len_3="$(sed -n 3p param.txt)"
-len_4="$(sed -n 4p param.txt)"
+len_1="$(sed -n 1p ../data/param.txt)"
+len_2="$(sed -n 2p ../data/param.txt)"
+len_3="$(sed -n 3p ../data/param.txt)"
+len_4="$(sed -n 4p ../data/param.txt)"
 
 flag_err=0
 
@@ -27,10 +27,10 @@ if [[ $# -ne 0 ]]
     echo -e "${LYELLOW}Передача параметров через командную строку не предусмотрена.${NORMAL}"
 fi
 
-str_1=$(cat param.txt | head -n1 | cut -c1-19)
-str_2=$(cat param.txt | head -n2 | tail -n 1 | cut -c1-19)
-str_3=$(cat param.txt | head -n3 | tail -n 1 | cut -c1-19)
-str_4=$(cat param.txt | head -n4 | tail -n 1 | cut -c1-19)
+str_1=$(cat ../data/param.txt | head -n1 | cut -c1-19)
+str_2=$(cat ../data/param.txt | head -n2 | tail -n 1 | cut -c1-19)
+str_3=$(cat ../data/param.txt | head -n3 | tail -n 1 | cut -c1-19)
+str_4=$(cat ../data/param.txt | head -n4 | tail -n 1 | cut -c1-19)
 
 str_1_1="column1_background="
 str_2_2="column1_font_color="
@@ -42,7 +42,7 @@ if [[ flag_err -eq 0 ]]
     if [[ $str_1 != $str_1_1 ]]||[[ $str_2 != $str_2_2 ]]||[[ $str_3 != $str_3_3 ]]||[[ $str_4 != $str_4_4 ]]
         then
         flag_err=1
-        cat param_def.txt > param.txt
+        cat ../data/param_def.txt > ../data/param.txt
         echo -e "${LYELLOW}Не допускается редактирование конфигурационных файлов. Установлена схема по умолчанию.${NORMAL}"
     fi
 fi
@@ -56,7 +56,7 @@ if [[ flag_err -eq 0 ]]
             continue
         else 
             flag_err=1
-            cat param_def.txt > param.txt
+            cat ../data/param_def.txt > ../data/param.txt
             echo -e "${LYELLOW}После знака '=' должен быть только 1 символ. Установлена default schema${NORMAL}"
             break
         fi
