@@ -1,0 +1,16 @@
+HOSTNAME        = s21school                     
+TIMEZONE        = Europe/Moscow UTC +3          
+USER            = sparrvio                      
+OS              = Ubuntu 22.04.1 LTS            
+DATE            = 11 November 2022 17:48:58     
+UPTIME          = 2 days, 10 hours,                   
+UPTIME_SEC      = 210124.68                        
+IP              = 127.0.0.1/8                   
+MASK            = 10.0.2.15                     
+GATEWAY         = 10.0.2.2                      
+RAM_TOTAL       = 4.114 GB                      
+RAM_USED        = 0.370 GB                      
+RAM_FREE        = 2.811 GB                      
+SPACE_ROOT      = 8212.00 MB                    
+SPACE_ROOT_USED = 2682.00 MB                    
+SPACE_ROOT_FREE = 5092.00 MB                    

@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 source "../03/color.sh"
 echo
 if [[ $1 -eq 6 ]]&&[[ $2 -eq 1 ]]&&[[ $3 -eq 2 ]]&&[[ $4 -eq 4 ]]

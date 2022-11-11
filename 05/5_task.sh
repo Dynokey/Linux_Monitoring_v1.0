@@ -1,5 +1,5 @@
-#!/bin/bash/
-
+#!/bin/bash
+echo "TOP 10 files of maximum size arranged in descending order (path, size and type):"
 echo "$(find $1 -type f)" > all_fails.txt
 top_10="$(cat all_fails.txt)"
 echo "$(du 2> err.txt -a $top_10 | sort -rh | head -10)" > top_10.txt
@@ -40,7 +40,7 @@ do
         then
         echo $file_ext
     else
-        echo "NO EXT" $(file $(echo -n $str_num | awk '{print $2}' | sed 'y/,/ /') | awk '{print $2, $3, $4, $5, $6, $7, $8'})
+        echo "Файл без расширения имеет формат" $(file $(echo -n $str_num | awk '{print $2}' | sed 'y/,/ /') | awk '{print $2, $3, $4, $5, $6, $7, $8'})
     fi
 done
 

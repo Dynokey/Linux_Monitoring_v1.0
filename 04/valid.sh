@@ -1,4 +1,4 @@
-#/bin/bash/
+#/bin/bash
 
 source "../03/color.sh"
 

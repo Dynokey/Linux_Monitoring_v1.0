@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 source "color.sh"
 
 re=^[1-6]?$

@@ -1,4 +1,4 @@
-#/bin/bash/
+#/bin/bash
 
 echo "Number of:" 
 echo "Configuration files (with the .conf extension)" = $(find $1 -type f -name "*.conf" | wc -l)

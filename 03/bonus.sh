@@ -1,6 +1,5 @@
 #!/bin/bash/
 source "color.sh"
-echo $1
 echo "#!/bin/bash" > script.sh
 echo '' >> script.sh
 echo "source "color.sh"" >> script.sh

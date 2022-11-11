@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 # IFS=$'/n'
 
 echo "$(du -Sk $1 | sort -rh | head -5)" > top_dir.txt

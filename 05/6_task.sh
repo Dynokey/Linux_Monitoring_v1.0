@@ -1,5 +1,5 @@
-#!/bin/bash/
-
+#!/bin/bash
+echo "TOP 10 executable files of the maximum size arranged in descending order (path, size and MD5 hash of file):"
 echo "$(find $1 -type f)" > all_fails.txt 
 top_10="$(cat all_fails.txt)"
 echo "$(du 2> err.txt -a $top_10 | sort -rh | head -10)" > top_10.txt
